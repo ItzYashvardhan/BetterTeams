@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file against thei
 
 The newest release will always be maintained at the top of the file.
 
+# 5.1.4
+
+**Duplication glitch fixed, please update ASAP!**
+
+### Bug Fixes
+
+* Fixed a duplication glitch with team echests - Credit Darkxx14
+
+Thanks to everyone else who helped provide debugging and investigation support to make this update so fast
+
 # 5.1.3
 
 ### Improvements
