@@ -77,7 +77,9 @@ public abstract class TeamManager {
 		}
 
 		try {
-			return new Team(uuid);
+			Team team = new Team(uuid);
+			loadedTeams.put(uuid, team);
+			return team;
 		} catch (IllegalArgumentException e) {
 			return null;
 		}

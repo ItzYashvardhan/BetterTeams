@@ -13,6 +13,11 @@ public class EchestCommand extends TeamSubCommand {
 	@Override
 	public CommandResponse onCommand(TeamPlayer player, String label, String[] args, Team team) {
 
+		if (InventoryManagement.adminViewers.containsKey(player.getPlayer().getPlayer())) {
+			Main.plugin.getLogger().warning(player.getPlayer().getPlayer().getName() + " tried duping :C get em!");
+			return new CommandResponse(false);
+		}
+
 		InventoryManagement.adminViewers.put(player.getPlayer().getPlayer(), team);
 		if (team.getEchest() == null || team.getEchest().getSize() == 0) {
 			Main.plugin.getLogger().warning("EnderChest was found to be null or empty " + team.getEchest()

@@ -150,8 +150,11 @@ public class SQLStorageManager extends TeamManager implements Listener {
 
 	public void unloadTeam(UUID uuid) {
 		Team team = Team.getTeam(uuid);
-		if (team.getScoreboardTeamOrNull() != null) {
-			team.getScoreboardTeamOrNull().unregister();
+		if (team != null) {
+			team.saveEchest();
+			if (team.getScoreboardTeamOrNull() != null) {
+				team.getScoreboardTeamOrNull().unregister();
+			}
 		}
 		loadedTeams.remove(uuid);
 	}
