@@ -197,7 +197,6 @@ public class SQLTeamStorage extends TeamStorage {
 		String serial = Utils.serializeInventory(inventory);
 		serial = serial.replace("\\", "\\\\");
 		serial = serial.replace("\"", "\\\"");
-		serial = "\"" + serial + "\"";
 		invalidateCache();
 		storageManager.getDatabase().executeStatement("UPDATE %s SET echest = ? WHERE %s".formatted(TableName.TEAM.toString(), getCondition()), serial);
 

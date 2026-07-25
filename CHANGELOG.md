@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file against thei
 
 The newest release will always be maintained at the top of the file.
 
+# 5.1.5
+
+### Bug Fixes
+
+* Fixed an issue causing some items to be lost in echests when using SQL storage type
+
 # 5.1.4
 
 **Duplication glitch fixed, please update ASAP!**
