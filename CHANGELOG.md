@@ -6,9 +6,16 @@ The newest release will always be maintained at the top of the file.
 
 # 5.1.5
 
+### Improvements
+
+* Updated Simplified Chinese translations (#944) - Credit Minecraft0122
+
 ### Bug Fixes
 
 * Fixed an issue causing some items to be lost in echests when using SQL storage type
+* Reduced the logging level of SQL statement outputs so they do not fill log files
+* Fixed issue with TeamRankupEvent failing to trigger due to a change the async processing (#1039)
+* Fixed Simplified Chinese language code on the wiki
 
 # 5.1.4
 

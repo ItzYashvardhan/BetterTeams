@@ -168,7 +168,7 @@ public class Database {
 	}
 
 	protected void addColumn(TableName table, String newColumnName, String columnDefinition, String referenceColumn,
-							 boolean after) {
+	                         boolean after) {
 		String positionClause = (referenceColumn != null)
 				? (after ? " AFTER " + referenceColumn : " BEFORE " + referenceColumn)
 				: "";
@@ -202,7 +202,7 @@ public class Database {
 			for (int i = 0; i < placeholders.length; i++) {
 				ps.setObject(i + 1, placeholders[i]);
 			}
-			Main.plugin.getLogger().info("EXECUTING " + ps);
+			Main.plugin.getLogger().fine("EXECUTING " + ps);
 			ps.executeUpdate();
 		} catch (SQLException e) {
 			Main.plugin.getLogger().severe("Something went wrong while executing SQL");
