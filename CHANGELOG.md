@@ -6,6 +6,8 @@ The newest release will always be maintained at the top of the file.
 
 # 5.1.6
 
+**PLEASE UPDATE IMMEDIATELY, THIS BUG HAS EXPLOITATION POTENTIAL**
+
 ### Bug Fixes
 
 * Fixed bug causing a players echest to not be closed when they are kicked from a team
